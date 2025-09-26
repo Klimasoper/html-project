@@ -4,52 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vila Eysk - Гостиница в Ейске</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <table width="100%" border="1" cellpadding="10" cellspacing="0">
-            <tr>
-                <td width="33%" align="center">
-                    <h1>Vila Eysk</h1>
-                </td>
-                <td width="33%" align="center">
-                    <p>Гостиница на первой береговой линии</p>
-                </td>
-                <td width="33%" align="center">
-                    <p>г. Ейск, ул. Пляжная, 25</p>
-                </td>
-            </tr>
-        </table>
+        <div class="header-content">
+            <div class="logo">
+                <h1>Vila Eysk</h1>
+                <p class="tagline">Гостиница на первой береговой линии</p>
+            </div>
+            <div class="address">
+                <p>г. Ейск, ул. Пляжная, 25</p>
+            </div>
+        </div>
         
         <nav>
-            <center>
-                <table width="80%" border="1" cellpadding="10">
-                    <tr>
-                        <td align="center"><a href="#rooms">Номера</a></td>
-                        <td align="center"><a href="#media">Медиа</a></td>
-                        <td align="center"><a href="#location">Расположение</a></td>
-                        <td align="center"><a href="#contact">Контакты</a></td>
-                    </tr>
-                </table>
-            </center>
+            <ul>
+                <li><a href="#rooms">Номера</a></li>
+                <li><a href="#media">Медиа</a></li>
+                <li><a href="#location">Расположение</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section id="rooms">
             <h2>Наши номера</h2>
-            <article>
-                <h3>Стандарт</h3>
-                <p>Комфортабельный номер с видом на море</p>
-            </article>
-            <article>
-                <h3>Люкс</h3>
-                <p>Просторный номер с балконом и панорамным видом</p>
-            </article>
-            <article>
-                <h3>Семейный</h3>
-                <p>Большой номер для семьи с детьми</p>
-            </article>
+            <div class="rooms-container">
+                <article class="room-card">
+                    <h3>Стандарт</h3>
+                    <p>Комфортабельный номер с видом на море. Идеальное сочетание цены и качества для вашего отдыха.</p>
+                </article>
+                <article class="room-card">
+                    <h3>Люкс</h3>
+                    <p>Просторный номер с балконом и панорамным видом на море. Роскошь и комфорт в каждом элементе.</p>
+                </article>
+                <article class="room-card">
+                    <h3>Семейный</h3>
+                    <p>Большой номер для семьи с детьми. Просторная планировка и все необходимое для комфортного отдыха.</p>
+                </article>
+            </div>
         </section>
 
         <section id="media">
@@ -71,7 +66,7 @@
 
         <section id="location">
             <h2>Расположение</h2>
-            <p>Мы находимся по адресу: г. Ейск, ул. Пляжная, 25</p>
+            <p>Мы находимся по адресу: <strong>г. Ейск, ул. Пляжная, 25</strong></p>
             <p>Гостиница расположена на первой береговой линии с прямым выходом к морю</p>
             
             <iframe 
@@ -81,7 +76,8 @@
                 scrolling="no" 
                 marginheight="0" 
                 marginwidth="0" 
-                src="https://www.openstreetmap.org/export/embed.html?bbox=38.275%2C46.705%2C38.285%2C46.710&amp;layer=mapnik&amp;marker=46.7075%2C38.280" style="border: 1px solid black">
+                src="https://www.openstreetmap.org/export/embed.html?bbox=38.275%2C46.705%2C38.285%2C46.710&amp;layer=mapnik&amp;marker=46.7075%2C38.280" 
+                style="border: 1px solid #ccc">
             </iframe>
             <br/>
             <small>
@@ -93,24 +89,21 @@
 
         <section id="contact">
             <h2>Контакты</h2>
-            <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-            <p>Email: info@vila-eysk.ru</p>
+            <p><strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+            <p><strong>Email:</strong> info@vila-eysk.ru</p>
         </section>
     </main>
 
     <footer>
-        <hr>
-        <table width="100%" border="0">
-            <tr>
-                <td width="50%" align="center">
-                    <p>© 2023 Гостиница "Vila Eysk"</p>
-                </td>
-                <td width="50%" align="center">
-                    <p>г. Ейск, ул. Пляжная, 25</p>
-                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
-                </td>
-            </tr>
-        </table>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>© 2025 Гостиница "Vila Eysk"</p>
+            </div>
+            <div class="footer-section">
+                <p>г. Ейск, ул. Пляжная, 25</p>
+                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
